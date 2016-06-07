@@ -1,0 +1,50 @@
+[console_scripts]
+zaqar-bench = zaqar.bench.conductor:main
+zaqar-gc = zaqar.cmd.gc:run
+zaqar-server = zaqar.cmd.server:run
+
+[oslo.config.opts]
+zaqar.common.configs = zaqar.common.configs:_config_options
+zaqar.storage.mongodb = zaqar.storage.mongodb.options:_config_options
+zaqar.storage.pipeline = zaqar.storage.pipeline:_config_options
+zaqar.storage.pooling = zaqar.storage.pooling:_config_options
+zaqar.storage.redis = zaqar.storage.redis.options:_config_options
+zaqar.storage.sqlalchemy = zaqar.storage.sqlalchemy.options:_config_options
+zaqar.transport.base = zaqar.transport.base:_config_options
+zaqar.transport.validation = zaqar.transport.validation:_config_options
+zaqar.transport.websocket = zaqar.transport.websocket.driver:_config_options
+zaqar.transport.wsgi = zaqar.transport.wsgi.driver:_config_options
+
+[tempest.test_plugins]
+zaqar_tests = zaqar.tests.tempest_plugin.plugin:ZaqarTempestPlugin
+
+[zaqar.control.storage]
+faulty = zaqar.tests.faulty_storage:ControlDriver
+mongodb = zaqar.storage.mongodb.driver:ControlDriver
+redis = zaqar.storage.redis.driver:ControlDriver
+sqlalchemy = zaqar.storage.sqlalchemy.driver:ControlDriver
+
+[zaqar.data.storage]
+faulty = zaqar.tests.faulty_storage:DataDriver
+mongodb = zaqar.storage.mongodb.driver:DataDriver
+mongodb.fifo = zaqar.storage.mongodb.driver:FIFODataDriver
+redis = zaqar.storage.redis.driver:DataDriver
+
+[zaqar.notification.tasks]
+http = zaqar.notification.task.webhook:WebhookTask
+https = zaqar.notification.task.webhook:WebhookTask
+mailto = zaqar.notification.task.mailto:MailtoTask
+
+[zaqar.storage.mongodb.driver.queue.stages]
+message_queue_handler = zaqar.storage.mongodb.messages:MessageQueueHandler
+
+[zaqar.storage.redis.driver.queue.stages]
+message_queue_handler = zaqar.storage.redis.messages:MessageQueueHandler
+
+[zaqar.storage.stages]
+zaqar.notification.notifier = zaqar.notification.notifier:NotifierDriver
+
+[zaqar.transport]
+websocket = zaqar.transport.websocket.driver:Driver
+wsgi = zaqar.transport.wsgi.driver:Driver
+

@@ -1,0 +1,1206 @@
+CHANGES
+=======
+
+* Init commit to add API ref in tree
+* Updated from global requirements
+* Use run() wrapper instead of connection.execute()
+* Improve the log to avoid unexpected ERROR
+* Replace tempest-lib with tempest.lib
+* Refactor zaqar/storage/utils.py to respect DRY
+* remove verbose option in devstack plugin
+* Fix falcon confilct in requirements.txt
+* Fix py34 gate job
+* Move to falcon middleware
+* Trivial: remove openstack/common in flake8 exclude list
+* Fix cache decorator tests
+* Imported Translations from Zanata
+* Updated from global requirements
+* Fix wrong claim error message
+* Default message ttl is needed to change correctly
+* Fix auth issue when accessing root path "/"
+* Make sure use IPv6 sockets for Zaqar in IPv6 environment
+* Show default attributes for queue
+* Updated from global requirements
+* Added samples in multiple languages
+* Updated from global requirements
+* Fix tempest tests list
+* Fix service_available opt registration and extra comma
+* expires should be checked when using pre-signed url
+
+2.0.0
+-----
+
+* Validate PUT of reserved queue attributes metadata
+* Validate PUT of reserved queue attributes metadata
+* Warn on upcoming deprecations for v1.0 and v1.1
+* Generate oslo.cache options via tox -e genconfig
+* Warn on upcoming deprecations for v1.0 and v1.1
+* Update reno for stable/mitaka
+* Update .gitreview for stable/mitaka
+
+2.0.0.0rc1
+----------
+
+* Fix PATCH queue's metadata
+* Remove unnecessary assert
+* Don't pass debug option to websocket constructor
+* Fix cleanup in metadata putting test
+* Updated from global requirements
+* Renew subscription on update with TTL
+* Add missing /ping for v1.1 homedoc
+* Forbid update subscription to duplicate
+* Fix updating subscription options in Redis driver
+* Updated from global requirements
+
+2.0.0.0b3
+---------
+
+* Support metadata update issue for v2
+* Fix the TTL issue of subscriptions for MongoDB
+* Fix the TTL issue of subscriptions for Redis
+* Fix freeze on some requests
+* Add `_max_messages_post_size` and `_default_message_ttl` for queue
+* Remove unused pngmath Sphinx extension
+* Updated from global requirements
+* Fix validation in websocket unit tests
+* Add tempest test for wsgi v2
+* Add description to 404 and 409 error responses
+* Support binary messages over websocket
+* Add tempest test for v1.1
+* Fix the tempest test error
+* Catch NoPoolFound on resource listing in transport
+* Fix arguments order in error_response (Websocket)
+* Fix cross-transport error handler
+* "group" word should be used instead "pool"
+* Fix subscriptions_post resource in wsgi 2 homedoc
+* Updated from global requirements
+* Add zaqar tempest plugin
+* Update operation should return updated result
+* Fix 500 error when create pools in wsgi v2
+* Get non-existing queue should return 200
+* Ensure hmget return right data format
+* Don't return links if subscriptions are empty
+* Updated from global requirements
+* Add queue name to notifications
+* Use Client-ID in devstack ping request to Zaqar
+* Fix improperly LOG using in Zaqar
+* Add the missing Client-ID check in wsgi v2
+* Make error response better for patching flavors
+* Use uppercase 'S' in word "OpenStack"
+* Don't return links if subscriptions are empty
+* Update homedoc in wsgi v2
+* Updated from global requirements
+* Fix typo in test_on_mesage_with_invalid_input
+* Replace six.iteritems(dict) with dict.items()
+* Ensure JSON sent over websocket is a dictionary
+* Imported Translations from Zanata
+* Updated from global requirements
+* Make enforce_type=True in CONF.set_override
+* Remove argparse from requirements
+* Use default pool for queue listing
+* Add new information to zaqar-bench tutorial
+* Fix zaqar-bench auth method detection
+
+2.0.0.0b2
+---------
+
+* Add tutorial for writing storage pipeline stages
+* Fix gate issues
+* Fix requirements of message_delete_many API
+* Replace deprecated library function os.popen() with subprocess
+* Make zaqar-bench use credentials from os_client_config
+* Updated from global requirements
+* Make websocket.html process notifications
+* Refactoring of docs during Mitaka cycle
+* Make enforce_type=True in CONF.set_override
+* Move subscription test from v1_1 to v2
+* Use assertTrue/False instead of assertEqual(T/F)
+* Move in-line function outside method
+* Updated from global requirements
+* Replace deprecated LOG.warn with LOG.warning
+* Fix the docs link
+* Fix for the deprecated library function
+* Changing LOG.warn to LOG.warning
+* Trival: Remove unused logging import In some files
+* remove python 2.6 trove classifier
+* Replace assertEqual(None, *) with assertIsNone in tests
+* Deprecated tox -downloadcache option removed
+* Updated from global requirements
+* Imported Translations from Zanata
+* Fix zaqar-bench not working
+* Updated from global requirements
+* Explicitly use asyncio protocol for websockets
+* Put py34 first in the env order of tox
+
+2.0.0.0b1
+---------
+
+* Fix duplicate auth_section issue
+* Fix queue create failure when metadata is {}
+* Add unreleased notes for releasenotes tree
+* Remove version from setup.cfg
+* Drop MANIFEST.in - it's not needed with PBR
+* delete python bytecode before every test run
+* Updated from global requirements
+* Add the default repos into devstack/settings file
+* Move development.environment.rst to standard location
+* Replace "MARCONI" with  "ZAQAR"
+* Fix typo
+* Automatically drop functional tests databases
+* Added CONTRIBUTING.rst file
+* Remove netaddr useless requirement
+* Fix write concern check for py34
+* Fix tox not performing some tests in some Envs
+* Updated from global requirements
+* Updated from global requirements
+* Add reno for release notes management
+* Imported Translations from Zanata
+* Use oslo_config new type PortOpt for port options
+* Some prerequisites for Fedora OS is missing in zaqar README.rst
+* Fix mongodb.conf corruption during stack.sh
+* Correctly stop uwsgi process during unstack.sh
+* Add  oslo_config IPOpt support
+* Use keystonemiddleware in config generation conf
+* Fix client constructor for zaqar-bench
+* Updated from global requirements
+* WebSocket functional tests
+* Some prerequisites for Ubuntu OS is missing in zaqar README.rst
+* Make websocket run in correct logging mode
+* Fix incorrect usage of assertEqual() in some tests
+* FIX TypeError for list queue command
+* Updated from global requirements
+* Adding namespace for [drivers] section in oslo-config-generator
+* Updated from global requirements
+* Notifications over websocket
+
+1.0.0
+-----
+
+* Imported Translations from Zanata
+* Removes redundant debug option
+* The `subtype` formatting arg does not exist
+* Fix order of arguments in assertEqual
+* Fix order of arguments in assertEqual
+* Fix order of arguments in assertEqual
+* Fix order of arguments in assertEqual
+* Fix order of arguments in assertEqual
+* Fix order of arguments in assertEqual
+* Fix order of arguments in assertEqual
+* Fix order of arguments in assertEqual
+* Fix order of arguments in assertEqual
+* Fix order of arguments in assertEqual
+* Fix order of arguments in assertEqual
+* Fix order of arguments in assertEqual
+* Imported Translations from Zanata
+* Cleanup of Translations
+* Cleanup of Translations
+* Use decorator instead of request logging in responders
+* Switch to oslo_cache
+* Open Mitaka development
+
+1.0.0.0rc1
+----------
+
+* Updated from global requirements
+* Add note for unreliable in README.rst
+* Adds max failure rate limit
+* Allow running zaqarclient for gate tests
+* Close backend connections in tests
+* Fix few typos in headings
+* Updated from global requirements
+* Max failure percent not longer needed for Rally gate
+* Imported Translations from Zanata
+* Correct "log_file" option in zaqar documents
+* Fix devstack option to plugin zaqar
+* Fix "message_store" config option in zaqar doc
+* Fix redis tests
+* Fix usage of mongo test URL
+* Fix duplicated queues on multi pools
+* Add Redis backend docs
+* RBAC support based on oslo.policy
+* Use a Text field instead of Binary
+* Prevent mutation of out-of-scope args
+* Don't raise 404 on missing queues
+* Add a global error handler for wsgi
+* Ensure group exists on updates
+* Fix error messages formatting
+* Don't create a connection on constructor
+* Rename get_group to get_pools_by_group
+* Enable pooling for redis' job
+* Don't set keystone as auth if not enabled
+* Fix 500 error when adding pool to wrong group
+* Let devstack redirect output
+* Hide project id for flavor
+* Fix accurate links in README.rst
+* Refactoring to make Websocket driver available in v2
+* Remove race condition in test_claim_lifecycle
+* Fix typos in sqlalchemy flavor.py
+* Don't register the default pool
+* Fix duplicated notification
+* Add email driver for notification
+* Updated from global requirements
+* Use thread executor all the time for notifier
+* Support various paths for signed URLs
+* Add unittests for Flavors in sqlalchemy
+* Restore sqlalchemy unit tests
+
+1.0.0.0b3
+---------
+
+* s/update/_update/ sqlalchemy's pool controller
+* Add support for flavors in sqlalchemy
+* Updated from global requirements
+* Return empty `links` on empty collections
+* Fixed the mistake in zaqar dev-environment
+* Update 'doc/source/development-environment.rst'
+* Removing unused dependency: discover
+* Fix GET queue metadata for sqlalchemy
+* Make False as default value for `unreliable`
+* Don't generate docs for zaqar.transport.wsgi.app
+* Updated from global requirements
+* Support signed URLs in WebSocket
+* Fix typos in test_suite.rst and test_utils.py
+* The link for plugin samples is updated
+* Mistakes in the sentences are corrected
+* Set a secret key in devstack
+* Update README.rst  in zaqar project
+* Fix WS deauthenticate
+* API v1.1 Claims endpoints
+* Move _(get|inc)_counter out of QueueController
+* Imported Translations from Transifex
+* Updated from global requirements
+* Fix WS endpoint registration
+* Use the executor directly in notifier
+* Authentication for websocket
+* Refactor notification framework
+* Add a websocket example
+* Add configuration to run service using uwsgi
+* Imported Translations from Transifex
+* Updated from global requirements
+* Remove unused oslo-incubator modules
+* Remove mock side_effect in test_messages
+* Imported Translations from Transifex
+* Set auth_strategy in devstack
+* Enable tox debug
+* Fix validation errors handling in websocket
+* Move to using the futurist library for async executors
+
+1.0.0.0b2
+---------
+
+* Skip tasks run when there is no subscriber
+* Updated from global requirements
+* Imported Translations from Transifex
+* Decouple the queue and subscription
+* Return the websocket response on invalid request
+* Return subscription ID on create
+* Handle missing document in subscription operations
+* Send message notifications as json
+* Enable message pipeline on devstack
+* Fix enabling of Zaqar in Devstack plugin
+* Update development documentation
+* Update README
+* Fix test failure linked to new mock release
+* Imported Translations from Transifex
+* Allow config of mongo test url using env variable
+* Add signed URL verification
+* Add pre-signed url generation endpoint
+* Move common configs under common.configs
+* Updated from global requirements
+* Validate UUIDs before the driver sends them
+* Update development-environment.rst guide
+* Make errors preventing driver load more useful
+* API v1.1 Messages endpoints
+* Satisfy abstract base by adding queue_controller
+
+1.0.0.0b1
+---------
+
+* Add support for pymongo 3.0.2
+* Move functional tests out of tests/
+* Imported Translations from Transifex
+* Update version for Liberty
+
+1.0.0a0
+-------
+
+* Added 'pool name' and 'flavor name' to response
+* Imported Translations from Transifex
+* Move all remaining unit tests out of tests/
+* Move storage unit tests out of tests/
+* Move transport tests out of tests/
+* Remove unused `pooling:catalog:storage` option
+* Try to use a default pool when creating a queue
+* Split `storage` into (message|management)_storage
+* Add missing doc files
+* Remove the sqlite entry point
+* Remove messages and claims from sql code
+* Move transport v1 tests out of tests/
+* Move transport v1_1 tests out of tests/
+* Deprecate v1
+* Remove `marconi-server`
+* Move transport v2 tests out of tests/
+* Speed up message expiration tests
+* Add cleanups to several tests
+* Imported Translations from Transifex
+* Clarify code comment in Redis backend
+* s/Marconi/Zaqar/ in method docstring
+* Switch from MySQL-python to PyMySQL
+* Port to oslo_log
+* Drop incubating theme from docs
+* Enable pooling in devstack
+* Imported Translations from Transifex
+* Delete unused README links
+* Replace ci.o.o links with docs.o.o/infra
+* Imported Translations from Transifex
+* Using oslo.context
+* Set unreliable True
+* Fix gate_hook and post_test_hook perms
+* Drop use of 'oslo' namespace package
+* Add gate hooks to enhance Zaqar's job
+* Add function dispatchers
+* Update dataplane section name
+* Remove support for sqlalchemy in devstack
+* Rename service to zaqar
+* Install packages from plugin.sh
+* Fix duplicated test cases of notifier
+
+2015.1.0
+--------
+
+* Move devstack's Zaqar code into the codebase
+* Release Import of Translations from Transifex
+* update .gitreview for stable/kilo
+* Updated from global requirements
+
+2015.1.0rc1
+-----------
+
+* Updated from global requirements
+* Open Liberty development
+* Adds a test for queues validations
+* makes uri unique to avoid duplicated pools
+* Remove QueueController from data to control plane
+* Fix instructions in README.rst file
+* Imported Translations from Transifex
+* Add websockets to our test suite
+* Imported Translations from Transifex
+* Implement webhook notifier driver
+* Adds message processing to WebSockets driver
+* Implement redis driver for notifications
+* Add REST API for notification/subscriptions
+* Allow for internal pipelines to be defined
+* Imported Translations from Transifex
+* Remove sqlalchemy from our data plane
+* Correcting Instruction For Mongodb URI in README.rst
+
+2015.1.0b3
+----------
+
+* Updates the readme.rst file to add dependencies steps
+* Updated from global requirements
+* Update json schema for API v1_1
+* Fix common misspellings
+* Use generate_uuid() from oslo.utils
+* Make the Pipeline inmutable
+* Adds a status code field to the Response
+* This change adds missing help strings for claims
+* Adds a representation for the Request and Response objects
+* Clean up inconsistent if statement syntax in transport auth
+* Adds websockets driver to Zaqar server
+* Syntax enhancements
+* Updated from global requirements
+* Updated from global requirements
+* Imported Translations from Transifex
+* API handler and API v1.1 Queue endpoints
+* Use pool's capabilities for flavors in v2
+* Split MongoDB's default implementation from FIFO's
+* Forbid adding stores with mismatching capabilities
+* Replace API v1 with v1.1 in README
+* Expose healt in homedoc
+
+2015.1.0b2
+----------
+
+* Imported Translations from Transifex
+* Refactor Api classes to enhance consistency
+* Updated from global requirements
+* Move oslo libraries out of the oslo namespace
+* Check marker before accessing it
+* Implement mongodb driver for notifications
+* Updated from global requirements
+* Fork v1_1 of the API into v2
+* Invalid grave accents at the end of the mongodb installation URLs
+* Fix the last assertion in test_impl_mongodb.test_message_counter
+* Version discovery for root URI
+* Imported Translations from Transifex
+* Use the oslo.serialization instead of openstack/common/jsonutils
+* Use keystoneclient auth and register required options
+* Clean up the 'queues' package for tests
+* Removed includes for zaqar.config.sample from doc
+
+2015.1.0b1
+----------
+
+* Temporally remove Sphinx from test-requirements-py3
+* Updated from global requirements
+* Slighty refactoring for the cross api spec
+* Fix the duplicate lines in autoindex doc
+* Clean up pooling meta-controllers
+* Wrap abstract method with base methods
+* Add capabilities property to the DataDriver
+* Split Control and Data planes of Storage layer
+* Expose pools and flavors in homedoc
+* Imported Translations from Transifex
+* Removes ZMQ directory
+* Refactor code structure for notification
+* Updated from global requirements
+* Don't register pool endpoints when pooling=False
+* Workflow documentation is now in infra-manual
+* Replace sqlite with sqlalchemy
+* Document mongodb's driver deployments
+* Rename rally-scenarios/ to rally-jobs/
+* Add rally job related files
+* Add instructions on generating sample config
+* Make the refrence to storage.errors to be consistent
+* Used a pooled config for health
+* Correctly stop functional servers
+* Test message delete when claim expires
+* Remove the outdated openstack common modules
+* Update oslo-config-generation code
+* Claim post requires a body
+* pooling conf is using a wrong deprecated conf
+* Remove config sample and generate it using code
+* Let the test client serialize request's body
+* Imported Translations from Transifex
+* Always include the project id in the logs
+* remove the old name conf file
+* Capture the stdout and stderr based on environment
+* Updated from global requirements
+* Why do we increment the counter after the insert?
+* Updated from global requirements
+* Imported Translations from Transifex
+* Put a cap on our cyclomatic complexity
+* Updated from global requirements
+* Fix ttl and grace story for claims updates
+* Fix the exception raised when running test by nose
+* Sync the zaqar.conf.sample file
+* Fix the doc typo
+* Imported Translations from Transifex
+* Fix no links property in flavor list response
+* Fix no links property in pool list response
+* Queue's empty list should return 200 and an object
+* Remove all traces of nose
+* Reduce duration of some long-running tests
+* Add support for redis-sentinel
+* Fix the param name typo
+* Updated from global requirements
+* Fix the typo in the description of the write concern error
+* Move marker field to the first position (index)
+* Imported Translations from Transifex
+* Add first reliability enforcement
+* Move the module reference to the top
+* Imported Translations from Transifex
+* Open Kilo development
+
+2014.2.rc1
+----------
+
+* Add a pool_group to pools in v1.1
+* Fix coverage testing
+* Don't skip pools' functional tests
+* Accept existing conf in dynamic_conf
+* Improve efficiency of the redis driver when posting messages
+* Move Redis driver's claim transaction to Lua
+* Fix typo in README
+* Use OpenStack Incubated branding for docs
+* Imported Translations from Transifex
+* V1.1: Add id property to messages in claims
+* Fix regression: No handlers could be found for logger when start
+* Fixes docstring typos
+* Don't register options in __init__
+* Updated from global requirements
+* Replace misleading max_message_size option name
+* Enable ZAQAR_TEST_SLOW for py27
+* Catch Exception instead of RuntimeError for driver
+* Fix the msg encode/decode error
+* Imported Translations from Transifex
+* Added checks enforcements rule to the developers manual
+* Add genconfig to tox.ini
+* Add the redis opts to the generate sample shell script
+* Removes claim_id param in v1.0
+* Stop using intersphinx
+* Not permitted to delete pools which are used by flavor
+* Workaround pypy bug on trusty when running tests
+* Add _ prefix to local variables
+* Remove test_correct_has from our test suite
+* Don't import client from the version package
+* Updated from global requirements
+* Remove extraneous created_iso property
+* Fix messages getting reclaimed in the Redis driver
+* Imported Translations from Transifex
+* Update Zaqar backend requirements
+* In the Redis driver, only read the msg body when needed
+* Fix: Redis driver does not fall back to default port
+* Add missing flavors_controller method to Redis driver
+* Adds the API reference to the devs guide
+* Remove recursive imports
+* Add a dox.yml config file
+* Add ZAQAR_TEST_EVERYTHING to enable all tests
+* V1.1: Add claim_id to message url
+* Fix pep8 error in bench tool
+* Use oslo.utils.encodeutils instead of strutils
+* Updated from global requirements
+
+2014.2.b3
+---------
+
+* Don't pass pipe when filtering messages in the Redis driver
+* In benchmark observer worker, include claimed messages when listing
+* Work toward Python 3.4 support and testing
+* Switch Redis driver modules over to oslo.utils.timeutils
+* Calculate stats dynamically instead of using side counters
+* Removing test_duration variable from bench/consumer.py
+* Imported Translations from Transifex
+* First patch and first review docs
+* Adds a manual garbage collector script
+* Zaqar configuration reference docs
+* Make Client-ID a required header
+* Don't return content_location anymore
+* Make X-Project-ID a required header
+* Implement claim and message expiration logic for Redis
+* Fix Redis message controller getting stuck in while loop
+* Fix the help string
+* Imported Translations from Transifex
+* Adds partial field deprecation note in the users guide
+* Ensure `pool` exists before creating a flavor
+* Fix the flavor tests failing under py33
+* Raise proper HTTP error when flavor doesn't exist
+* Imported Translations from Transifex
+* Adds more resources section to to developers guide
+* Enhance docstrings for the config reference
+* Implements queue, message and claim controllers for Redis
+* Add observer role to benchmark tool
+* Do not fail silently when given a bogus claim ID
+* Make the catalog flavor-aware
+* Updated from global requirements
+* API v1.1: adding id field to messages
+* Add API support for flavors
+* Add the ability to benchmark across multiple queues
+* Fix divide by zero bug in benchmark workers
+* Imported Translations from Transifex
+* Switch to oslo.utils
+* Remove obsolete README for benchmark
+* Fix incorrect accounting of total requests in benchmark consumer
+* Make claim batch size configurable in benchmark tool
+* Remove common.transport.wsgi.utils
+* Report claim and delete latency separately in the benchmark tool
+* Add dev docs for transport/storage dirvers
+* Updated from global requirements
+* Fix config generator in Zaqar
+* Don't call config() in the global space
+* V1.1 Homedoc
+* Add separate proc and worker options for producer and consumer
+* Clean up expired messages for SQLAlchemy driver
+* Encapsulate top-level lists in responses in object
+* Updated from global requirements
+* Update use cases to align with dev guide and positioning
+* Improve benchmarking tool
+* feat(v1.1): Implement new /health endpoint for v1.1
+* Fix .gitreview due to the repo rename/move
+* Setting up a development environment docs
+* Update files from oslo-incubator
+* Reorganize docs folder
+* Add page about tests to developer docs
+* Use auth_token from keystonemiddleware
+* Improve developer guide introduction
+* Make `admin_mode` a cli option
+* Remove user oriented documentation from the dev guide
+* Add flavors support to mongodb
+* Enable MongoDB tests on py27
+* Require mongodb >= 2.2 or fail misserably
+* Updated from global requirements
+* Rename Marconi to Zaqar
+* Fix py3k incompatibility with itertools.ifilter
+* Fixes several failing mongo driver tests
+* Mark sqlalchemy's data driver as deprecated
+* Updated from global requirements
+* Filter out expired messages
+* Updated from global requirements
+* Deprecate partial field in v1.0, remove in v1.1
+* Imported Translations from Transifex
+
+2014.2.b2
+---------
+
+* Minor cleanup of utils unit test
+* Correct the test instructions in README
+* API v1.1 - Encapsulate message post bodies in a JSON object
+* Rename remaining 'shard' to 'pool'
+* Updated from global requirements
+* feat(v1.1): Default TTL and grace values
+* Remove check queue exists endpoint
+* Imported Translations from Transifex
+* feat(benchmarking) : Producer-Consumer scenario
+* Adding dependencies for redis support in marconi
+* Implement POP in v1.1 API
+* Drop pylint due to the huge amount of false positives
+* Updated from global requirements
+* Run storage unit tests in pooled context
+* Make storage/pooling reflect storage/base
+* Switch over oslo.i18n
+* Primary key for pool in catalogue table is unreasonable
+* Fix typos
+* Clean up queues created for certain tests
+* Use the class queue_name and project for tests
+* limit=0 in sqlalchemy means 0 instead of unlimited
+* Fix broken wiki link
+* Wrong param order when using errors.QueueNotMapped
+* Changing default type for pooling Catalog storage driver
+* Add None checking for the Mongodb uri
+* Start scratching Queue Flavors api
+* V1.1 Functional Tests
+* Updated from global requirements
+* Remove alphabetical sorting assumption in tests
+* Rename shard to pool
+* Fix two caching-related comments in the code
+* Correct the rtype in the function docstrings
+* Fix Python 3 leftovers
+* Removed buggy httpretty to unblock the gate
+* Sync with oslo-incubator
+* Expose pymongo's SSL cert options
+* Updated from global requirements
+* Update hacking version and fix new violations
+* Rename shards to pool
+* Updated from global requirements
+* Make storage.utils.keyify py3k compatible
+* Implement Lazy Create Queue in v1.1 API
+* Sync from oslo-incubator
+* Fix tests to be Python 3 compatible
+
+2014.2.b1
+---------
+
+* remove default=None for config options
+* Decoupled Unit Tests
+* Refactor auxiliary methods for MongoDB unit tests
+* Re-enable tests affected by #1321840
+* fix: Checking whether queue exists adds latency
+* Small fixes in storage drivers for Python 3
+* Prepare marconi for localization
+* Removed now unnecesary workaround for PyPy
+* Fix handling of request/response body for Python 3
+* Updated from global requirements
+* Fix sqlalchemy storage driver for Python 3
+* V1 Tests JsonSchema
+* Synced jsonutils from oslo-incubator
+* Fixed a few typos in the codebase
+* Add separate requirements file for Python 3
+* Revert "Disable Metadata write operations on v1.1"
+* Updated from global requirements
+* Updated from global requirements
+* Fixing some spelling, grammar, etc in docs
+* Fixed incorrect reST syntax
+* Updated from global requirements
+* Removes host header from functional tests
+* Synced jsonutils from oslo-incubator
+* fix(metadata): Fix inconsistent error response under v1.1
+* Use jsonschema for testing queue
+* Updated from global requirements
+* Adds command line option "daemon" to Marconi
+* Disable Metadata write operations on v1.1
+* Remove MySQL-python from the dependency list
+* Instantiate app only when needed
+* fix(sharding): deregister queue before delete
+* Use config options to determine message count
+* Updated from global requirements
+* Update comment for version to say "Juno" instead of "Icehouse"
+* Open Juno development
+* Add specific doc build option and gate on warnings
+* Dedup HACKING.rst and remove any pep8 or OpenStack hacking rules
+
+2014.1.rc1
+----------
+
+* Don't fork marconi-server unless USE_SCREEN=False
+* keystone middleware version change due to a bug
+* Add a help text for auth_strategy
+* Improve cleanup of test_insert_queue_header_asterisk
+* Switch to oslosphinx
+* keystoneclient now supports Py3K
+* Add keystone_authtoken to our config generator
+* fix() : introduce division import
+* Fix message.first return value for mongodb
+* Updated from global requirements
+* Add more unit tests for message controller
+* Include full license text
+* Update license headers on select source files
+* Fix functional config file instructions
+* Add default mongod URI to README
+* Marconi Operations Document
+* adds docs directory with dev guide
+* fix(gate): one for pypy, one for docs
+* Improve README file
+* Enable the basic dev doc for Marconi
+* Allow marconi-server to properly daemonize
+* Rename logging.conf-sample to logging.conf.sample
+* Fix config file name in README instructions
+* Keep python 3.X compatibility for xrange
+* Use oslo's config generator to generate sample
+* Prepare Marconi to support oslo's config.generator
+* Add an options module to sqlalchemy
+* Updated from global requirements
+* Use a colon instead of a . in setup.cfg
+* Sync from oslo-incubator
+* Add MySQL-python as a dependency
+* Add missing logging trace queues collection
+* fix(cli): Print statement in global error handler
+* Enable shards test for sqlalchemy
+* Remove unused method from timeutils
+* Reuse the transaction before getting messages
+* Set time_zone to UTC on MySQL
+* MySQL requires VARCHARs to have a length
+* Slighty refactored url_prefix usage in WSGI tests
+* Update marconi.conf-sample to deprecate sqlite
+* Replace `Sqlite` with `Sqlalchemy` in test names
+* Removed debug level messages translations
+* fix(MongoDB): Driver does not retry on AutoReconnect errors
+
+2014.1.b3
+---------
+
+* Fix assertion for Testutils to check on sqlite://:memory:
+* Deprecate sqlite in favor of sqlalchemy
+* Don't raise `DoesNotExist` on claims deletion
+* Register sqlalchemy endpoints
+* Fix message's get and deletion
+* Enable pragma foreign key for sqlite
+* Remove termios support (and associated issues)
+* Updated from global requirements
+* fix(mongodb): Limit kwarg must be an int
+* test(wsgi): Refactor tests in preparation for API v1.1
+* test(wsgi): Enable test_default_limits and fix UUID bug
+* Add an sqlalchemy storage to Marconi
+* Updated from global requirements
+* feat(sql/catalogue): add catalogue controller
+* feat(sqlalchemy): add shards controller
+* Replace unicode() by six.text_type for python3 compatability
+* Replace basestring by six for python3 compatability
+* feat(v1.1): Implement /ping endpoint for v1.1
+* feat(v1.1): Plumb v1.1 API in the WSGI transport
+* Sync common modules from olso and remove py3kcompat
+* doc(README): Have the user pass '-v' when starting marconi-server
+* Fix two small typos in marconi/queues/storage/sharding.py
+* feat(sql/driver): expose ControlDriver, more config
+* Apply six for metaclass
+* Use six.moves.urllib.parse instead of urlparse
+* Improve help strings
+* fix(wsgi): Cleanup limit config options
+* fix(shards): guard against registering bad shard URIs
+* Fix misspellings in marconi
+* test(functional): Use direct WSGI requests in lieu of a wsgiref server
+* chore: Fix pylint errors
+* test(functional): Don't use a dead test server
+* fix(testtools): 0.9.35 is not compatible with subunit 0.0.17
+* Skip message_get_many schema test until we can repro reliably
+* Removed copyright from files without code
+* add copyright notices to some source files
+* DRY applied to class names
+* Add a _config_options function to Marconi
+* chore: Add pylint envs
+* Drop msgpack dependency
+* fix: Move decorator out of class definition since it is static
+* Sync oslo-cache from oslo-incubator
+* Don't use `override_time` but mock instead
+
+2014.1.b2
+---------
+
+* fix: ConnectionError no longer takes positional arguments
+* Remove dev1 from version, since it is added automagically by pbr
+* fix(mongodb): Ensure batch message posts are atomic (all or nothing)
+* Enforce size verification on content-length
+* Use testr instead of nosetest
+* Remove __MARCONI_SETUP__
+* test: Use srmock header_dict in preparation for Falcon 0.1.8
+* Added a request and response file to common
+* Map HTTP request codes in jsonschema
+* Verify response jsonschema for List Messages by ID
+* Change shards & catalogue db into single property
+* Implement DataDriver for sqlalchemy storage backend
+* Implement tables and unit tests for sqlalchemy storage backend
+* chore: Sync local (marconi) requirements with global reqs
+* DRY queues storage error message format
+* Added logging to HTTP errors
+* chore: Bump version to icehouse-2 dev
+* Return relative URIs for href-template of homedoc
+* Remove the __MARCONI_SETUP_ global from init
+* Use relative import for base in tests
+* Don't use tuple parameters
+* Disable keystone client if running under Py3K
+* Remove gettext magic and import _ explicitly
+* fix: Reduce logging severity of certain errors
+* chore: Remove remaining proxy cruft
+* fix(mongo): Delete claimed message fails
+* feat(sharding): Cache shard mappings
+* chore: Pass cache into drivers
+* fix: shard test failing
+* fix: mongodb tests consume storage like crazy
+* Fixes wrong hrefs when getting set of messages
+* Make sqlite connection lazy
+* cleanup: remove proxy cruft
+* opt: add hints to make delete/claim checks faster
+* fix: cache contract for memcached backend
+* Make consumer_for a context manager
+* feat(health): make health API storage-aware
+* feat(validation): verify project id length
+* feat(shard): queue listing from multiple sources
+* Added empty packages and a test for the API v1
+* Remove proxy code
+* Cleans up marconi-queues and marconi-proxy config files
+* Revert "Support building wheels (PEP-427)"
+* Isolate tests a bit more
+* feat: connect sharding manager to control drivers
+* Support building wheels (PEP-427)
+* refactor: drop simplejson requirement
+* Update openstack/common/lockutils
+* Add Tests for non-existing resources
+* feat: integrate shard storage with transport
+* Renamed "exceptions" module to "errors"
+* feat: add catalogue storage driver for queues
+* Sync with global requirements
+* feat(logging): format msg when log level met
+* feat: shards mongodb driver + tests
+* feat: shards storage controller interface
+* Update the Marconi readme with more detailed installation instructions
+* feat: add shard management resource
+* Don't enable_echo when we don't have a tty
+* Start 2014.1 development
+* feat: split queues API into public/admin
+* fix: one less unnecessary modification
+* Move misplaced test under the right package
+* Fix Pep8 indentation errors missed by Pep8 1.4.5
+* fix(bootstrap): Logging CLI options don't work
+* feat: Storage sharding foundation
+* Validation for messages returned by queue/stats
+* Return a consumer function instead of consuming
+* Use stevedore instead of importutils
+* fix(queues): Global config used everywhere
+* 'Persist' __getattr__ results
+* Setup storage pipeline in the boostrap instead of driver base
+* chore: Remove GC cruft from storage driver base class
+* Follow hacking rules about import
+* doc: Update conf filename used to enable mongod
+* fix: invalidate partition cache entry on delete
+* doc: Recommend installing marconi via pip
+* Updated Marconi ReadMe file with correct git repo address
+* Tests for Client-ID validation
+* Use the pipeline for the storage layer
+* Implement common pipeline class
+* feat: storage sharding schema for marconi-queues
+* fix(mongo): Negative age reported in stats
+* fix: proxy mongodb storage fields overspecified
+* fix: validate queue listing limits in proxy
+* Use oslo.config directly instead of common.config
+* Replace deprecated method aliases in tests
+* fix(mongo): Queue listing may include queues from other projects
+* fix: stream request data rather than loading it into memory
+* fix: allow multi-update on partition storage
+* feat(api): Client-ID as a real UUID
+* feat(api): give validation resp a different title
+* bug: proxy headers aren't forwarded properly
+* feat: add logging to proxy
+* fix: listing queue fails when detailed=True
+* fix: do not duplicate queues across partitions
+* chore: Designate semi-private "friend" helper methods as such
+* chore: Rename MONGODB_TEST_LIVE to MARCONI_TEST_MONGODB
+* feat(proxy): listing opts returns lists
+* Add Tests for Queue Stats
+* fix(wsgi): Non-ASCII characters in the queue name trigger 500 status
+* fix: encode keys before caching
+* fix: force exception content to be text_type
+* feat (proxy/admin): allow partition modifications
+* feat: split proxy API into admin and public apps
+* feat: separate config for queues and proxy
+* proxy: mirror structure of marconi queues + bootstrap
+* fix(proxy): forward marconi headers
+* Fix queue's packages namespaces
+* feat(mongodb): Partition data across multiple databases
+* chore: Expose commit hash in version module
+* WSGI: added the control for non empty X-PROJECT-ID
+* Update oslo to latest and greatest
+* perf(mongodb): Combine project and queue message fields
+* fix(mongodb): Marker generation creates a bottleneck under heavy load
+* fix: age presented as negative
+* test(proxy): fix proxy-transport tests
+* proxy: adds oslo.cache, config support, & stevedore
+* Require oslo.config 1.2.0 final
+* Move queues' unittests under tests/unit/queues/
+* Move test_default_limits to the new tests location
+* Move tests/unit/storage/base under m/tests/storage
+* proxy: mongodb storage driver
+* proxy: memory storage driver + tests + fixes
+* fix(mongodb): Remove $or clause used to claim messages
+* Help Bleeding Eyes
+* Update pbr and requirements to be current
+* Update HACKING file with the new structure
+* test(proxy): catalog tested
+* Fix old import paths
+* test(proxy): partition related endpoints tested
+* feat: define interfaces for proxy storage
+* feat: marconi-proxy forwarding
+* feat: marconi proxy (v1, health)
+* feat: marconi proxy
+* Change Marconi's codebase structure
+* Fix Functional Tests
+* chore: Update Falcon dep to allow version 0.1.7
+* Update .gitreview for incubation org move
+* feat(mongo): use UNIX timestamp instead of datetime
+* Replace old functional http.post call
+* chore: Update oslo.config to version 1.2.0a4
+* fix(tests): unit tests disabled due to missing __ini__.py
+* fix: Requests get slower when queues have a lot of messages
+* Move Unit tests under a unit package
+* Use format instead of % for string formatting
+* Move functional tests into wsgi/v1
+* Implement small http client for tests
+* Implement embedded marconi-server execution
+* Run functional tests under tox
+* Use oslo.config for functional tests
+* Remove util packages
+* Pull actual tests out of marconi/tests
+* fix(transport.wsgi): JSON home doc missing GET and HEAD hints
+* feat(storage): configurable default paging size
+* fix(storage.mongodb): Race condition when creating a claim
+* Make tox use develop instead of sdist
+* fix: Claim can return 404
+* chore: Update openstack.common to get latest timeutils
+* chore: Track the up-and-coming oslo.cache module
+* fix: claimed message require claim_id to delete
+* chore: Update openstack.common, add lockutils
+* Refactor System Tests
+* feat(wsgi): homedoc now ships relative URIs
+* chore: remove queue_id cruft in mongo driver
+* chore: increase coverage in some trivial ways
+* chore: remove unneeded statements in wsgi
+* Update Tests for Input Validation
+* chore: cleanup the unit tests with ddt
+* Added a PyPy env to tox
+* Log pymongo's exception on ConnectionFailure
+* fix: bad marker behaves like non-existing marker
+* Don't wait for ack when deleting expired messages
+* Use req.get_param's store feature in lieu of utils.purge
+* restructure: rm -rf tools, move test requires
+* test: delete msg w/ invalid claim isn't deleted
+* fix: fetching nonexistent message/claims raises 503s
+* Ignore *.egg dirs
+* Don't use claim creation time to calc claim's age
+* fix: rename _payload_uplimit into _paging_uplimit
+* feat(validation): check metadata JSON size
+* Convert "outgoing" literals to unicode
+* fix(storage/mongo): unclaimed messages not listed
+* Fixes unique constraint regex
+* doc(validation): update the sample config file
+* Use oslo.config 1.2
+* feat(validation): validate user input
+* Buffer message documents when enqueuing them, in lieu of streaming
+* Rename transport helpers to utils
+* Update tests to reflect http 201 on Post Claim
+* Add "total", "oldest" and "newest" to queue stats
+* feat(wsgi): claim creation returns 201
+* Add Tests for GET/HEAD queue
+* Update oslo-incubator requirements
+* feat(transport): place request size limit for JSON
+* Don't check for active messages
+* Use queue's name and project to get messages
+* Test for bulk delete of messages
+* feat(api): GET and HEAD methods on queue
+* Update tests to reflect queue metadata changes
+* Implement v1 JSON Home Document
+* feat(wsgi): message bulk deletion
+* feat(storage): message bulk deletion
+* Fix active index's order
+* Sort everything by K
+* Tell _list queries what index to use
+* Verify headers in server response
+* refactor: _basic_message builder for mongo driver
+* Gate on Python 3.3
+* Include queue ID in unclaim to trigger use of index
+* refactor: get single message in storage
+* Adds test for include_claimed flag
+* fix(typo): Phython to Python
+* Tests for out of range integers
+* Implements new metadata endpoint
+* feat(storage): separate queue set_metadata()
+* Exception messages are no longer marked as translatable
+* Add support for listing claimed messages (transport)
+* Add support for listing claimed messages (storage)
+* feat(transport): define acceptable integer range
+* chore: drop unused bulk message support on /queues
+* chore: switch to py3 print function
+* feat(wsgi): check for client media type support
+* Add Test for Health endpoint
+* Fix Message Tests
+* feat(storage): do not restrict the container type
+* Log all transport actions
+* Cleanup PATCH Claim Tests
+* Print caught exceptions in cli
+* Replace foo.next() with next(foo)
+* fix(wsgi): patching claims only requires "ttl"
+* fix(wsgi): a non-existing queue stats returns 404
+* Fix route for bulk-get message by ID
+* Update README and make it more explicit
+* Handle AutoReconnect errors
+* Add test for bulk delete of messages
+* Implement grace period for claimed message lifetimes
+* Implement health endpoint for WSGI driver
+* Fix Verification for Bulk Inserts
+* Factor out entry point helper and apply to marconi.cmd.server
+* Fixed pep8 dependency conflict
+* Refactored storage controllers into standalone modules
+* System Tests - Switch from robot to nosetests
+* Remove project ID from the URI
+* Get several messages by ID using a queue filter parameter
+* Don't sink stdout when running unit tests
+* Get messages by id
+* Set Falcon version in requirements.txt
+* Edited the READMEs to improve layout and prose
+* Added some de-facto style guidelines to HACKING and fixed violations
+* Update marconi.conf-sample to support stevedore
+* Migrate to stevedore
+* Removing cliff from dependencies
+* Rename pip-requires / test-requires into (test-)requirements.txt
+* Migrate to pbr
+* Log retry attempts resulting from parallel message posts
+* Move log.setup to Bootstrap and use cfg.CONF opts
+* Guarantee FIFO/once-and-only-once delivery when using MongoDB
+* Add Verification for List Queue
+* Pass content length to req.stream.read() in WSGI transport
+* Make sure transport's conf are registered
+* Wrap transport's app with keystoneclient's middleware
+* Replace gunicorn with wsgiref
+* Add System Tests
+* Don't use BaseException.message
+* Properly handle message post with an empty iterable
+* Expand controller abbreviations in WSGI resources
+* Clean up exception handling in the WSGI transport driver
+* Use oslo's log
+* Rename bin package into cmd
+* perf: Decrease time to create a claim by ~1 us
+* refactor: Hoist helpers.expect into package namespace
+* style: Fix flake8 and hacking errors
+* Rename tenant into project
+* Raise NotFound when an invalid ID is passed
+* style: Migrate to the new hacking package on pypi
+* style: Enable flake8 with proper exclusions
+* Set messages ttl to claims ttl
+* Fix tests which were broken by incomplete changes
+* Switch to flake8 and fix errors
+* A helper to remove None value entries from a dict
+* Support list queue pagination in transport
+* Support list queue pagination in storage
+* Message listing switches to the new API
+* Define the new pagination API in storage base
+* Use ttl indexes as message scrubber
+* Add simplejson into dependency
+* Support the new claim TTL semantics in SQlite
+* Get rid of SQlite's own test code
+* Support message deletion with claim in MongoDB
+* A self-format exception, ClaimNotPermitted
+* Bugfix: Deleting a claimed msg is idempotent
+* Move SQlite ID tests to driver-specific tests
+* Let the storage tests cover the SQlite driver
+* All endpoints in WSGI pick up the faulty driver
+* Make Paste use default configs
+* Fix a bug in test; "href" needs to be splitted
+* Bugfix: Exclude expired claimed messages in stats
+* Count "claimed" and "free" msgs in Queue stats
+* Bugfix: Do not claim expired messages in SQlite
+* Queue mgmt picks up the faulty driver in WSGI
+* Delete messages when a queue is deleted
+* Improved mongodb's storage queries and indexes
+* Make use of simplejson in the transport layer
+* fix: Enable reading from secondaries in the MongoDB driver
+* Bugfix: respond 204 if no message get claimed
+* Log the traceback as well
+* Immigrate SQlite message tests to storage tests
+* client_uuid is not optional to POST messages
+* Added total, claimed, expired to queue stats
+* chore: Remove bin/marconi-self-host
+* Queue stats returns claimed, expired, and total
+* Config module no longer remember cli args
+* Added gunicorn as server application manager
+* Remove unused code in storage
+* Implemented marconi-server entry point
+* Queue stats in MongoDB
+* Add the "href" field to listing queues
+* Use "href" instead of "id" in the claimed messages
+* Use "href" instead of "id" in the message body
+* Make use of the features in falcon 0.1.3 & 0.1.4
+* Queue Stats in WSGI
+* List queues in WSGI (w/o paging, but compatible)
+* Delete queue in WSGI
+* Check for malformed JSON when creating a queue
+* Claim support in WSGI
+* ClaimMessage implementation for mongodb
+* Do not allow updating an expired claim in SQlite
+* Bugfix: exclude expired messages in Queue stats
+* ClaimMessage Base Tests
+* Return (claim_id, message_iter) in SQLite create()
+* Raise self-formatted exceptions in SQlite
+* Don't call super on queue deletion
+* Set 'Content-Location' on get-messages correctly
+* MessageController implementation for mongodb storage
+* Rename QueueResource to queues.ItemResource
+* Claim messages in SQlite
+* Message support in WSGI
+* split message's get method in 2 separate methods
+* Suppress some Coverage report output
+* Improve the documentation of the config module
+* Message support in SQlite
+* Use metadata instead of **metadata for claim's updates
+* Keystone Authentication
+* test: Added mongodb and faulty storage tests, and made them pass
+* style(HACKING): Add notes about whitespace, naming, and wrapping
+* chore: Remove unused module (superseded by bootstrap)
+* Bootstrap now dynamically imports storage and transport modules
+* style: Enable pep8 warnings/errors and fix ensuing chaos
+* SQlite storage improved
+* feat(transport.wsgi): Create or update queue
+* chore: Remove unused test
+* refactor: Rename AUTHORS so that it doesn't keep getting overwritten
+* refactor: Rename TestSuite to TestBase
+* refactor: Rename Kernel class to make it less confusing
+* QueueController for mongodb storage
+* refactor(tests.util): Remove prepare method support
+* Implementation of the reference storage
+* Add py26 to tox.ini
+* Move .set_cli and .load to the project() object
+* Metadata is not optional (to storage)
+* Replace create / update with upsert
+* Added tenant to the *ControllerBaseTest
+* Updated README file with Marconi's goal
+* Implement some logic in abstract methods
+* Changed Maintainer from OpenStack LLC to OpenStack Foundation
+* Add gettext support
+* fix(nose): Comment out detailed-errors to workaround a testtools+nose bug
+* fix(tox): Address warnings
+* Decentralized configuration
+* Use issublcass instead of isinstance
+* Implements base classes  for storage controllers
+* doc(transport.driver_base): Add docstrings
+* Added hacking file
+* Move marconi.common.Kernel to marconi.Kernel
+* Switch to oslo.config
+* Ignore vim backup files
+* doc: Make file headings consistent, and update docstrings per the proposed HACKING guide
+* feat(Kernel): Demonstrate wiring up endpoints
+* test: Add test suite utility class and sample conf
+* chore: Stub out how the kernel will be configured, and connect transports and storage
+* chore: Setup directory structure
+* Added license to setup.py
+* Added oslo-config as dependency
+* Fixed setup, tox and requirements
+* Added files to gitignore
+* Add README
+* Initial import
